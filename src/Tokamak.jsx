@@ -15,7 +15,7 @@ const LAYERS = [
     color: '#1a3a70',
     stroke: '#4fc3f7',
     label: 'Central Solenoid',
-    desc: 'The pulsed central solenoid drives an electric current through the plasma inductively, creating the poloidal magnetic field component.',
+    desc: 'The central solenoid pulses an electric current through the plasma. This creates the magnetic field that completes the confinement geometry.',
     labelAngle: 195,
     labelR: 240,
   },
@@ -26,7 +26,7 @@ const LAYERS = [
     color: 'plasma',
     stroke: null,
     label: 'Plasma (150 M°C)',
-    desc: 'Deuterium–tritium plasma at 150 million °C — ten times hotter than the Sun\'s core. The site of all fusion reactions.',
+    desc: 'Deuterium-tritium plasma at 150 million degrees. Ten times hotter than the Sun\'s core. This is where fusion happens.',
     labelAngle: 90,
     labelR: 220,
   },
@@ -37,7 +37,7 @@ const LAYERS = [
     color: '#2e4a5c',
     stroke: '#5a8aa0',
     label: 'First Wall',
-    desc: 'Tungsten or beryllium-clad panels directly facing the plasma. Must handle 1–2 MW/m² of heat flux and intense neutron bombardment.',
+    desc: 'The innermost wall faces the plasma directly. It handles up to 2 megawatts of heat per square meter, alongside constant neutron bombardment.',
     labelAngle: 295,
     labelR: 222,
   },
@@ -48,7 +48,7 @@ const LAYERS = [
     color: '#0d2d18',
     stroke: '#1e5030',
     label: 'Breeding Blanket',
-    desc: 'Lithium-bearing blanket absorbs fast neutrons and breeds tritium fuel via ⁶Li + n → ⁴He + T. Also converts neutron energy to heat.',
+    desc: 'The blanket absorbs neutrons and breeds tritium fuel from lithium. It also converts that neutron energy into heat that drives the power cycle.',
     labelAngle: 330,
     labelR: 228,
   },
@@ -59,7 +59,7 @@ const LAYERS = [
     color: '#1c2c3c',
     stroke: '#3a5570',
     label: 'Vacuum Vessel',
-    desc: 'Double-walled stainless steel vessel maintains a vacuum of 10⁻⁶ Pa — ten times better than low Earth orbit — essential for plasma confinement.',
+    desc: 'A double-walled steel vessel that holds a vacuum better than low Earth orbit. The plasma cannot exist without it.',
     labelAngle: 30,
     labelR: 230,
   },
@@ -70,7 +70,7 @@ const LAYERS = [
     color: '#102040',
     stroke: '#2a5090',
     label: 'Superconducting Coils',
-    desc: 'Nb₃Sn superconducting toroidal field coils cooled to −269°C carry 68,000 A, generating the 5.3 T magnetic field that confines the plasma.',
+    desc: 'Superconducting coils cooled to 269 degrees below zero carry 68,000 amperes. They generate the magnetic field that holds the plasma in place.',
     labelAngle: 145,
     labelR: 228,
   },
@@ -81,7 +81,7 @@ const LAYERS = [
     color: '#111c28',
     stroke: '#28384a',
     label: 'Cryostat',
-    desc: 'The outermost steel vessel provides thermal insulation (vacuum jacket) to maintain the cryogenic environment needed for the superconducting coils.',
+    desc: 'The outermost vessel insulates everything inside from room temperature. Without it, the superconducting coils cannot function.',
     labelAngle: 225,
     labelR: 230,
   },
@@ -383,8 +383,8 @@ export default function Tokamak({ onNavigate }) {
           marginBottom: 32, lineHeight: 1.65,
         }}>
           A tokamak uses powerful superconducting magnets to confine superheated plasma in a
-          toroidal (donut-shaped) magnetic field, forcing hydrogen isotopes together until they
-          fuse — releasing more energy than it takes to sustain the reaction.
+          donut-shaped magnetic field. The hydrogen isotopes inside are forced together until
+          they fuse. The reaction releases more energy than it costs to sustain.
         </p>
 
         {/* ── Diagram + Info panel ─────────────────────────── */}

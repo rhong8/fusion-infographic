@@ -72,7 +72,7 @@ export default function Chart() {
           fontSize: 12, color: 'rgba(255,255,255,0.45)',
           marginTop: 4,
         }}>
-          Fusion yield (MJ) vs. laser driver input (MJ) — NIF, Lawrence Livermore
+          Fusion yield vs. laser input, in megajoules. National Ignition Facility, Lawrence Livermore.
         </p>
       </div>
 
@@ -160,9 +160,9 @@ export default function Chart() {
           boxShadow: '0 0 8px #4caf50',
         }} />
         <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.65)', lineHeight: 1.5 }}>
-          <strong style={{ color: '#4caf50' }}>Dec 5, 2022 — Historic Ignition:</strong>{' '}
-          NIF produced 3.15 MJ from 2.05 MJ of laser input (Q ≈ 1.54), the first time
-          any fusion experiment achieved scientific energy breakeven.
+          <strong style={{ color: '#4caf50' }}>Dec 5, 2022:</strong>{' '}
+          NIF produced 3.15 MJ from 2.05 MJ of laser input. Q was 1.54. It was the first time
+          any fusion experiment produced more energy than it consumed.
         </p>
       </div>
     </div>

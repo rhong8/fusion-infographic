@@ -2,7 +2,7 @@ const STATS = [
   {
     label: 'Q-value (NIF, Dec 2022)',
     value: '> 1',
-    sub: 'Q ≈ 1.54 — energy out exceeds laser energy in',
+    sub: 'Q of 1.54. Energy out exceeded laser energy in.',
     color: '#4caf50',
     icon: '⚡',
   },
@@ -16,7 +16,7 @@ const STATS = [
   {
     label: 'ITER Target Q-value',
     value: 'Q = 10',
-    sub: '500 MW output from 50 MW heating — planned for 2035',
+    sub: '500 MW output from 50 MW of heating input. Planned for 2035.',
     color: '#29b6f6',
     icon: '🎯',
   },

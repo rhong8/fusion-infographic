@@ -4,21 +4,21 @@ const STEPS = [
   {
     title: 'Step 1 — Proton–Proton Fusion',
     eq: 'p + p → ²H + e⁺ + νₑ',
-    desc: 'Two protons collide and quantum-tunnel through the Coulomb barrier. One proton undergoes beta-plus decay, converting to a neutron and releasing a positron (e⁺) and an electron neutrino (νₑ). The result is deuterium — a nucleus with one proton and one neutron.',
+    desc: 'Two protons collide and fuse. One converts to a neutron, releasing a positron and a neutrino. The product is deuterium: one proton and one neutron bound together.',
     color: '#ff7043',
     energy: '0.42 MeV',
   },
   {
     title: 'Step 2 — Deuterium + Proton',
     eq: '²H + p → ³He + γ',
-    desc: 'A deuterium nucleus fuses with a third proton to form helium-3. The excess energy is radiated as a gamma-ray photon (γ) — high-energy electromagnetic radiation that slowly diffuses outward over thousands of years.',
+    desc: 'Deuterium fuses with another proton to form helium-3. The released energy escapes as a gamma-ray photon, slowly diffusing outward over thousands of years.',
     color: '#ffca28',
     energy: '5.49 MeV',
   },
   {
     title: 'Step 3 — Helium-3 Fusion',
     eq: '³He + ³He → ⁴He + 2p + 12.86 MeV',
-    desc: 'Two helium-3 nuclei fuse to form stable helium-4 (an alpha particle), releasing two protons that re-enter the cycle. This step releases the most energy — 12.86 MeV — and is what makes the Sun shine.',
+    desc: 'Two helium-3 nuclei fuse into helium-4, releasing two protons back into the cycle. This step releases the most energy: 12.86 MeV. It is what makes the Sun shine.',
     color: '#29b6f6',
     energy: '12.86 MeV',
   },
@@ -189,10 +189,9 @@ export default function Sun({ onNavigate }) {
         marginTop: 12, lineHeight: 1.7,
       }}>
         Every second, the Sun converts{' '}
-        <strong style={{ color: '#fff' }}>600 million tons of hydrogen into helium</strong>,
-        releasing energy through nuclear fusion — the same process humanity is working to
-        harness here on Earth.
-      </p>
+        <strong style={{ color: '#fff' }}>600 million tons of hydrogen into helium</strong>{' '}
+        through nuclear fusion. It is the same process we are learning to harness on Earth.
+</p>
 
       {/* Stat row */}
       <div style={{
@@ -234,7 +233,7 @@ export default function Sun({ onNavigate }) {
         The Proton–Proton Chain
       </h2>
       <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 22 }}>
-        The dominant fusion process in Sun-like stars
+        The process that has powered stars for billions of years
       </p>
 
       {/* Step tabs */}
@@ -323,11 +322,9 @@ export default function Sun({ onNavigate }) {
           26.73 MeV
         </div>
         <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.58)', lineHeight: 1.7 }}>
-          One complete pp-chain cycle releases 26.73 MeV — the equivalent of ~26 million
-          X-ray photons. The Sun performs this reaction{' '}
+          One complete cycle releases 26.73 MeV. The Sun runs this reaction{' '}
           <strong style={{ color: '#ccc' }}>9.2 × 10³⁷ times per second</strong>.
-          On Earth, tokamaks use deuterium–tritium fusion for a far more energetic reaction
-          per particle.
+          On Earth, tokamaks use deuterium-tritium fusion for a more energetic reaction per particle.
         </p>
       </div>
 
