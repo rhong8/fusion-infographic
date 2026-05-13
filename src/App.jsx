@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from './Hero.jsx'
 import Sun from './Sun.jsx'
 import Tokamak from './Tokamak.jsx'
+import Map from './Map.jsx'
 import WorksCited from './WorksCited.jsx'
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
       {page === 'hero'        && <Hero        onNavigate={setPage} />}
       {page === 'sun'         && <Sun         onNavigate={setPage} />}
       {page === 'tokamak'     && <Tokamak     onNavigate={setPage} />}
+      {page === 'map'         && <Map         onNavigate={setPage} />}
       {page === 'works-cited' && <WorksCited  onNavigate={setPage} />}
     </>
   )

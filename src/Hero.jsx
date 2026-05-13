@@ -115,27 +115,53 @@ export default function Hero({ onNavigate }) {
       </div>
 
       {/* ── Earth ───────────────────────────────────────────── */}
-      <div style={{
-        position: 'absolute',
-        bottom: 55, left: 70,
-        width: 210, height: 210,
-        borderRadius: '50%',
-        background: `
-          radial-gradient(circle at 36% 32%,
-            #b3e5fc 0%, #0288d1 20%,
-            #2e7d32 38%, #1a5c28 52%,
-            #01579b 65%, #0a237a 82%,
-            #050f2c 100%)
-        `,
-        boxShadow: '0 0 50px 12px rgba(20,80,200,0.28), inset -28px -28px 55px rgba(0,0,0,0.72)',
-        zIndex: 2,
-      }} />
+      <div
+        onClick={() => onNavigate('map')}
+        title="Explore global fusion sites"
+        style={{
+          position: 'absolute',
+          bottom: 55, left: 70,
+          width: 210, height: 210,
+          borderRadius: '50%',
+          background: `
+            radial-gradient(circle at 36% 32%,
+              #b3e5fc 0%, #0288d1 20%,
+              #2e7d32 38%, #1a5c28 52%,
+              #01579b 65%, #0a237a 82%,
+              #050f2c 100%)
+          `,
+          boxShadow: '0 0 50px 12px rgba(20,80,200,0.28), inset -28px -28px 55px rgba(0,0,0,0.72)',
+          cursor: 'pointer',
+          zIndex: 2,
+          transition: 'transform 0.25s, box-shadow 0.25s',
+        }}
+        onMouseEnter={e => {
+          e.currentTarget.style.transform = 'scale(1.04)'
+          e.currentTarget.style.boxShadow = '0 0 70px 20px rgba(20,80,200,0.45), inset -28px -28px 55px rgba(0,0,0,0.72)'
+        }}
+        onMouseLeave={e => {
+          e.currentTarget.style.transform = 'scale(1)'
+          e.currentTarget.style.boxShadow = '0 0 50px 12px rgba(20,80,200,0.28), inset -28px -28px 55px rgba(0,0,0,0.72)'
+        }}
+      >
+        <div style={{
+          position: 'absolute', bottom: 14, width: '100%',
+          textAlign: 'center',
+          fontSize: 8, fontFamily: 'Orbitron, sans-serif',
+          color: 'rgba(180,220,255,0.75)', letterSpacing: 2.5,
+          fontWeight: 700, textTransform: 'uppercase',
+          textShadow: '0 0 10px rgba(100,180,255,0.9)',
+        }}>
+          TAP TO EXPLORE
+        </div>
+      </div>
       <div style={{
         position: 'absolute', bottom: 272, left: 122,
         fontSize: 10, color: 'rgba(100,180,255,0.65)',
         letterSpacing: 3, textTransform: 'uppercase', zIndex: 3,
+        pointerEvents: 'none',
       }}>
-        Earth ↗
+        Fusion Sites ↗
       </div>
 
       {/* ── Main Title ──────────────────────────────────────── */}
